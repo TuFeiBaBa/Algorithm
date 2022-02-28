@@ -42,26 +42,29 @@ string pushDominoes(string dominoes) {
 			k++;
 		}
 		right = k < n ? dominoes[k] : 'R';
-		if (k == i) {
+		//
+		/*if (k == i) {
 			i++;
 			continue;
-		}
-		if (left == 'L' && right == 'R') {
-			//do nothing
-		}
-		else if (right == left) {
+		}*/
+		//if (left == 'L' && right == 'R') {
+		//	//do nothing
+		//}
+		//else 
+		if (right == left) {
 			while (i < k) {
 				dominoes[i++] = right;
 			}
 		}
-		else {
+		else if(left == 'R' && right == 'L'){
 			int j = k - 1;
 			while (i < j) {
 				dominoes[i++] = 'R';
 				dominoes[j--] = 'L';
 			}
 		}
-		i = k;
+		//索引k处，肯定不是'.'，所以任何情况下都不需要处理
+		i = k + 1;
 	}
 	return dominoes;
 }
