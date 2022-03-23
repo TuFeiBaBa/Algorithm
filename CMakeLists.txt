@@ -20,4 +20,6 @@ add_executable(the-time-when-the-network-becomes-idle "leetcode/the-time-when-th
 
 add_executable(k-th-smallest-in-lexicographical-order "leetcode/k-th-smallest-in-lexicographical-order.cpp")
 
+add_executable(find-missing-observations "leetcode/find-missing-observations.cpp")
+
 # TODO: 如有需要，请添加测试并安装目标。
