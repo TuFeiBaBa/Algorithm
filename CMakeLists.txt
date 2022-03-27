@@ -22,4 +22,8 @@ add_executable(k-th-smallest-in-lexicographical-order "leetcode/k-th-smallest-in
 
 add_executable(find-missing-observations "leetcode/find-missing-observations.cpp")
 
+add_executable(remove-colored-pieces-if-both-neighbors-are-the-same-color "leetcode/remove-colored-pieces-if-both-neighbors-are-the-same-color.cpp")
+
+add_executable(binary-number-with-alternating-bits "leetcode/binary-number-with-alternating-bits.cpp")
+
 # TODO: 如有需要，请添加测试并安装目标。
