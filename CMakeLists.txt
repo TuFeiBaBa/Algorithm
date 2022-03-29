@@ -26,4 +26,6 @@ add_executable(remove-colored-pieces-if-both-neighbors-are-the-same-color "leetc
 
 add_executable(binary-number-with-alternating-bits "leetcode/binary-number-with-alternating-bits.cpp")
 
+add_executable(maximize-the-confusion-of-an-exam "leetcode/maximize-the-confusion-of-an-exam.cpp")
+
 # TODO: 如有需要，请添加测试并安装目标。
