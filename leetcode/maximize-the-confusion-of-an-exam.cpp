@@ -1,5 +1,6 @@
 #include <string>
 #include <cassert>
+#include <queue>
 using namespace std;
 /**
  * 考试的最大困扰度:https://leetcode-cn.com/problems/maximize-the-confusion-of-an-exam/
@@ -9,7 +10,8 @@ public:
 	int maxWin(string answerKey, int k, char t) {
 		int maxWin = 0;
 		int curWin = 0;
-		int lastReplacePos = -1;
+		//可以用队列来存储，那就不需要遍历查找
+		queue<int> kPos;
 		for (int i = 0; i < answerKey.size(); i++) {
 			char c = answerKey[i];
 			if (c == t) {
@@ -19,17 +21,13 @@ public:
 				if (k > 0) {
 					curWin++;
 					k--;
-					if (lastReplacePos == -1) lastReplacePos = i;
+					kPos.push(i);
 				}
 				else {
 					maxWin = max(maxWin, curWin);
-					curWin = i - lastReplacePos;
-					for (int j = lastReplacePos + 1; j <= i; j++) {
-						if (answerKey[j] != t) {
-							lastReplacePos = j;
-							break;
-						}
-					}
+					kPos.push(i);
+					curWin = i - kPos.front();
+					kPos.pop();
 				}
 			}
 		}
