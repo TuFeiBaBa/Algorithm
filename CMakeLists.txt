@@ -30,4 +30,5 @@ add_executable(maximize-the-confusion-of-an-exam "leetcode/maximize-the-confusio
 
 add_executable(array-of-doubled-pairs "leetcode/array-of-doubled-pairs.cpp")
 
+add_executable(rotate-string "leetcode/rotate-string.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
