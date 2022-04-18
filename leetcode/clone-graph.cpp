@@ -1,5 +1,6 @@
 #include <unordered_map>
 #include <vector>
+#include <queue>
 using namespace std;
 class Node {
 public:
@@ -21,7 +22,7 @@ public:
 
 class Solution {
 public:
-	Node* dfs(Node* node, unordered_map<int, Node*>& record) {
+	/*Node* dfs(Node* node, unordered_map<int, Node*>& record) {
 		if (!node) return nullptr;
 		if (record.count(node->val)) return record[node->val];
 		Node* copy = new Node(node->val);
@@ -35,6 +36,31 @@ public:
 	Node* cloneGraph(Node* node) {
 		unordered_map<int, Node*> record;
 		return dfs(node, record);
+	}*/
+
+	Node* bfs(Node* node) {
+		queue<Node*> q;
+		q.push(node);
+		//这里也和dfs有差异
+		unordered_map<Node*, Node*> record;
+		record[node] = new Node(node->val);
+		while (!q.empty()) {
+			Node* n = q.front();
+			q.pop();
+			for (Node* neighbor : n->neighbors) {
+				if (record.find(neighbor) == record.end()) {
+					record[neighbor] = new Node(neighbor->val);
+					q.push(neighbor);
+				}
+				record[n]->neighbors.emplace_back(record[neighbor]);
+			}
+		}
+		return record[node];
+	}
+
+	Node* cloneGraph(Node* node) {
+		if (node == nullptr) return nullptr;
+		return bfs(node);
 	}
 };
 
