@@ -33,4 +33,6 @@ add_executable(array-of-doubled-pairs "leetcode/array-of-doubled-pairs.cpp")
 add_executable(rotate-string "leetcode/rotate-string.cpp")
 
 add_executable(insert-delete-getrandom-o1 "leetcode/insert-delete-getrandom-o1.cpp")
+
+add_executable(find-servers-that-handled-most-number-of-requests "leetcode/find-servers-that-handled-most-number-of-requests.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
