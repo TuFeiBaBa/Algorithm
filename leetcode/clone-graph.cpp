@@ -34,14 +34,25 @@ public:
 	}
 
 	Node* cloneGraph(Node* node) {
+		//为什么用map：
+		//图是无向的，两个相连的节点a、b互为邻节点。先遍历a，再遍历b，到b时，a已经被创建过了，所以需要map记录创建的a
+		//为什么不要数组：
+		//虽然节点数不超过100。但由于无法知道节点的总数，所以，我们只能创建一个长度为100或101的数组，占用内存比map大。
 		unordered_map<int, Node*> record;
 		return dfs(node, record);
 	}*/
 
+	/**
+	 * bfs思路：
+	 * 1.用队列。先将头节点入队
+	 * 2.while循环检测队列是否为空
+	 *		1.出队队列头
+	 *		2.将满足条件的入队
+	 */
 	Node* bfs(Node* node) {
 		queue<Node*> q;
 		q.push(node);
-		//这里也和dfs有差异
+		//key用int或者Node*均可，都能唯一标识到对应的Node*
 		unordered_map<Node*, Node*> record;
 		record[node] = new Node(node->val);
 		while (!q.empty()) {
