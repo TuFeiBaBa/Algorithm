@@ -37,4 +37,6 @@ add_executable(insert-delete-getrandom-o1 "leetcode/insert-delete-getrandom-o1.c
 add_executable(find-servers-that-handled-most-number-of-requests "leetcode/find-servers-that-handled-most-number-of-requests.cpp")
 
 add_executable(clone-graph "leetcode/clone-graph.cpp")
+
+add_executable(course-schedule "leetcode/course-schedule.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
