@@ -26,6 +26,7 @@ public:
 		}
 
 		vector<int> visited(numCourses);
+		//遍历的原因：可能有多个起点
 		for (int i = 0; i < digraph.size(); i++) {
 			if (digraph[i].empty()) continue;
 			//课程已经被检查过了
