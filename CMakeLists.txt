@@ -39,4 +39,6 @@ add_executable(find-servers-that-handled-most-number-of-requests "leetcode/find-
 add_executable(clone-graph "leetcode/clone-graph.cpp")
 
 add_executable(course-schedule "leetcode/course-schedule.cpp")
+
+add_executable(course-schedule-ii "leetcode/graph/course-schedule-ii.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
