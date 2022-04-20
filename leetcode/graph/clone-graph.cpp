@@ -36,7 +36,7 @@ public:
 	Node* cloneGraph(Node* node) {
 		//为什么用map：
 		//图是无向的，两个相连的节点a、b互为邻节点。先遍历a，再遍历b，到b时，a已经被创建过了，所以需要map记录创建的a
-		//为什么不要数组：
+		//为什么不用数组：
 		//虽然节点数不超过100。但由于无法知道节点的总数，所以，我们只能创建一个长度为100或101的数组，占用内存比map大。
 		unordered_map<int, Node*> record;
 		return dfs(node, record);
