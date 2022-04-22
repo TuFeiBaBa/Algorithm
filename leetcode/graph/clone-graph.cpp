@@ -19,7 +19,13 @@ public:
 		neighbors = _neighbors;
 	}
 };
-
+/**
+ * 解题思路：
+ * 1.遍历图
+ *	1.是有向图，还可能是有环的，故需要visited进行记录，剪枝
+ * 2.构建新图
+ *	1.对于visited[i]的节点，要设置之前遍历时已经创建的新节点，故要用map来记录这个信息
+ */
 class Solution {
 public:
 	/*Node* dfs(Node* node, unordered_map<int, Node*>& record) {
