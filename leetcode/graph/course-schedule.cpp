@@ -1,6 +1,15 @@
 #include <vector>
 #include <iostream>
 using namespace std;
+/*
+* 解题思路：
+* 1.构建图：有向图，用vector<int>
+* 2.遍历图：
+*	1.是否有环：onStack数组
+*	2.遍历过程中的剪枝：visited数组
+*	两者可以考虑合并，onStack用1来表示。visited用2来表示
+* 3.遍历图时，要外层大循环检查所有的顶点，因为它不一定是树结构，只有一个入口。
+*/
 class Solution {
 public:
 	bool dfs(vector<vector<int>>& digraph, int course, vector<int>& visited) {
