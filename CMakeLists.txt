@@ -41,4 +41,6 @@ add_executable(clone-graph "leetcode/graph/clone-graph.cpp")
 add_executable(course-schedule "leetcode/graph/course-schedule.cpp")
 
 add_executable(course-schedule-ii "leetcode/graph/course-schedule-ii.cpp")
+
+add_executable(minimum-height-trees "leetcode/graph/minimum-height-trees.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
