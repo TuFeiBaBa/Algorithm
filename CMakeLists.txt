@@ -45,4 +45,6 @@ add_executable(course-schedule-ii "leetcode/graph/course-schedule-ii.cpp")
 add_executable(minimum-height-trees "leetcode/graph/minimum-height-trees.cpp")
 
 add_executable(longest-increasing-path-in-a-matrix "leetcode/graph/longest-increasing-path-in-a-matrix.cpp")
+
+add_executable(reconstruct-itinerary "leetcode/graph/reconstruct-itinerary.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
