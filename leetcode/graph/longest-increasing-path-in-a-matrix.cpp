@@ -72,6 +72,7 @@ public:
 			}
 		}
 		int deep = 0;
+		//相比较于DFS+记忆优化，BFS+拓扑排序，不需要记录已经走过节点（这是拓扑排序的特点决定的？）
 		while (!q.empty()) {
 			deep++;
 			int size = q.size();
