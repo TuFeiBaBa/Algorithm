@@ -6,6 +6,7 @@
 using namespace std;
 
 /**
+* 重新安排行程: https://leetcode-cn.com/problems/reconstruct-itinerary/
  * 1.有多条路径时，如何选择?
  *	1.选择字母序最小的一条。不可行：可能走进死胡同，字母序最小的可能要最后才能走
  * 2.采用DFS、BFS：
