@@ -13,6 +13,8 @@ using namespace std;
  *  2.动态方程是 dp[x][y] = max(dp[x][y],dp[nx][ny] + 1)
  * 3.每个点，能往另一个点走的前提是
  *	1.matrix[x][y] <= matrix[nx][ny]
+ * 
+ * 时间复杂度计算：https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/solution/ju-zhen-zhong-de-zui-chang-di-zeng-lu-jing-by-le-2/
  */
 class Solution {
 	//private:
