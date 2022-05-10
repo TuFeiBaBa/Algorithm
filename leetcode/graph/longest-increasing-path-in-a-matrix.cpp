@@ -68,6 +68,7 @@ public:
 		}
 
 		queue<pair<int, int>> q;
+		//优化：可以合并到前面的遍历代码中去
 		for (int i = 0; i < matrix.size(); i++) {
 			for (int j = 0; j < matrix[0].size(); j++) {
 				if (out[i][j] == 0) q.emplace(i, j);
