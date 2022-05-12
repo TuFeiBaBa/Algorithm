@@ -53,4 +53,6 @@ add_executable(evaluate-division "leetcode/graph/evaluate-division.cpp")
 add_executable(number-of-provinces "leetcode/graph/number-of-provinces.cpp")
 
 add_executable(redundant-connection "leetcode/graph/redundant-connection.cpp")
+
+add_executable(redundant-connection-ii "leetcode/graph/redundant-connection-ii.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
