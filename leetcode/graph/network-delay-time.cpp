@@ -1,5 +1,7 @@
 #include <vector>
 #include <algorithm>
+#include <queue>
+#include <iostream>
 using namespace std;
 
 /**
@@ -24,42 +26,82 @@ using namespace std;
 *			2.邻接表：用一个以顶点为索引的列表数组，其中的每个元素都是和该顶点相邻的顶点列表。适合当边数量接近点的数量，即 【V≈E】 时，即适合【稀疏图】。
 *			3.边的数组：用一个类表示边。然后用数组，把所有的边对象存储起来。只有当我们需要确保某个操作复杂度严格为 【O(E)】 时，才会考虑使用。
 *		   提到三种存图方式的解法：https://leetcode.cn/problems/network-delay-time/solution/gong-shui-san-xie-yi-ti-wu-jie-wu-chong-oghpz/
-*		
+*	时间复杂度：https://blog.csdn.net/michealoven/article/details/114040136
 */
 class Solution {
 public:
 	//朴素写法：枚举法
 	//时间复杂度：O(n^2+ m)，其中 m 是数组 times 的长度。
 	//空间复杂度：O(n^2)。邻接矩阵需占用 O(n^2)的空间。
-	int networkDelayTime(vector<vector<int>>& times, int n, int k) {
-		const int inf = INT_MAX / 2;
-		vector<vector<int>> g(n, vector<int>(n, inf));
-		for (auto& t : times) {
-			int x = t[0] - 1, y = t[1] - 1;
-			g[x][y] = t[2];
-		}
+	//int networkDelayTime(vector<vector<int>>& times, int n, int k) {
+	//	const int inf = INT_MAX / 2;
+	//	vector<vector<int>> g(n, vector<int>(n, inf));
+	//	for (auto& t : times) {
+	//		int x = t[0] - 1, y = t[1] - 1;
+	//		g[x][y] = t[2];
+	//	}
 
-		vector<int> dist(n, inf);
-		dist[k - 1] = 0;
-		vector<int> used(n);
-		for (int i = 0; i < n; ++i) {
-			int x = -1;
-			for (int y = 0; y < n; ++y) {
-				if (!used[y] && (x == -1 || dist[y] < dist[x])) {
-					x = y;
+	//	vector<int> dist(n, inf);
+	//	dist[k - 1] = 0;
+	//	vector<int> used(n);
+	//	for (int i = 0; i < n; ++i) {
+	//		int x = -1;
+	//		for (int y = 0; y < n; ++y) {
+	//			if (!used[y] && (x == -1 || dist[y] < dist[x])) {
+	//				x = y;
+	//			}
+	//		}
+	//		used[x] = true;
+	//		for (int y = 0; y < n; ++y) {
+	//			dist[y] = min(dist[y], dist[x] + g[x][y]);
+	//		}
+	//	}
+	//	//max_element是用来来查询最大值所在的第一个位置。所以需要*来解引用，获取最大值。
+	//	int ans = *max_element(dist.begin(), dist.end());
+	//	return ans == inf ? -1 : ans;
+	//}
+
+	int networkDelayTime(vector<vector<int>>& times, int n, int k) {
+		////vector<vector<int>> graph(n + 1, vector<int>(n + 1));
+		vector<vector<pair<int, int>>> graph(n + 1);
+		//预分配空间，避免扩容
+		for (auto& adj : graph) {
+			adj.reserve(n + 1);
+		}
+		for (int i = 0; i < times.size(); i++) {
+			graph[times[i][0]].emplace_back(times[i][1], times[i][2]);
+		}
+		//最大肯定不会超过10001
+		vector<int> dict(n + 1, 10001);
+		//起点初始化为0
+		dict[k] = 0;
+		priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> q;
+		q.emplace(0, k);
+		int ans = 0;
+		while (!q.empty()) {
+			pair<int, int> p = q.top();
+			int time = p.first;
+			int x = p.second;
+			q.pop();
+			if (time > dict[x]) continue;
+			ans = max(ans, time);
+			for (auto& e : graph[x]) {
+				int y = e.first;
+				int d = dict[x] + e.second;
+				if (dict[y] > d) {
+					dict[y] = d;
+					q.emplace(d, y);
 				}
 			}
-			used[x] = true;
-			for (int y = 0; y < n; ++y) {
-				dist[y] = min(dist[y], dist[x] + g[x][y]);
-			}
 		}
-		//max_element是用来来查询最大值所在的第一个位置。所以需要*来解引用，获取最大值。
-		int ans = *max_element(dist.begin(), dist.end());
-		return ans == inf ? -1 : ans;
+
+		return count(dict.begin() + 1, dict.end(), 10001) > 0 ? -1 : ans;
 	}
 };
 
 int main() {
-
+	Solution su;
+	vector<vector<int>> times{ {2, 1, 1},{2, 3, 1},{3, 4, 1} };
+	int ans = su.networkDelayTime(times, 4, 2);
+	cout << ans << endl;
 }
