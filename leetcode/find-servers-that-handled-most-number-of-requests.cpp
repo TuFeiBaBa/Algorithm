@@ -24,6 +24,15 @@ using namespace std;
 *	1.set是红黑树结构，它的增删的时间复杂度都是O(logn)
 *	2.优先队列是堆结构，即完全二叉树。增删的时间复杂度是O(logn)
 *   综上，整体的时间复杂度是O(klogk + nlogk),即O((k + n)logk)
+* 
+* 3.Java TreeSet
+*	1.ceiling：返回大于或等于给定元素的最小元素，或者null
+*	2.floor：返回小于或等于给定元素的最大元素，或者null
+*	3.lower：返回小于给定元素的最大元素，或者null
+*	4.higher：返回大于给定元素的最小元素，或者null
+* 4.C++ set
+*	1.lower_bound
+*	2.upper_bound
 */
 class Solution {
 public:
