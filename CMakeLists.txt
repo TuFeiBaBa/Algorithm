@@ -57,4 +57,6 @@ add_executable(redundant-connection "leetcode/graph/redundant-connection.cpp")
 add_executable(redundant-connection-ii "leetcode/graph/redundant-connection-ii.cpp")
 
 add_executable(network-delay-time "leetcode/graph/network-delay-time.cpp")
+
+add_executable(cracking-the-safe "leetcode/graph/cracking-the-safe.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
