@@ -74,6 +74,7 @@ public:
 	int networkDelayTime(vector<vector<int>>& times, int n, int k) {
 		//也相当于预分配空间了吧？
 		//vector<vector<int>> graph(n + 1, vector<pair<int, int>>(n + 1));
+		//n + 1是为了编码方便。因为节点不是从0开始编号，而是1。
 		vector<vector<pair<int, int>>> graph(n + 1);
 		//预分配空间，避免扩容
 		for (auto& adj : graph) {
@@ -84,13 +85,15 @@ public:
 		}
 		//最大肯定不会超过10001
 		vector<int> dict(n + 1, 10001);
-		//起点初始化为0
+		//注意：起点一定要初始化为0！
 		dict[k] = 0;
 		priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> q;
 		q.emplace(0, k);
 		int ans = 0;
 		while (!q.empty()) {
+			//是top()，没有front()
 			pair<int, int> p = q.top();
+			//pair的first、second是字段，不是方法
 			int time = p.first;
 			int x = p.second;
 			q.pop();
@@ -106,7 +109,7 @@ public:
 				}
 			}
 		}
-
+		//第一个因为编码原因，是多余的，所以 + 1
 		return count(dict.begin() + 1, dict.end(), 10001) > 0 ? -1 : ans;
 	}
 };
