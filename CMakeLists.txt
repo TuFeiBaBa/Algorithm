@@ -61,4 +61,6 @@ add_executable(network-delay-time "leetcode/graph/network-delay-time.cpp")
 add_executable(cracking-the-safe "leetcode/graph/cracking-the-safe.cpp")
 
 add_executable(couples-holding-hands "leetcode/graph/couples-holding-hands.cpp")
+
+add_executable(is-graph-bipartite "leetcode/graph/is-graph-bipartite.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
