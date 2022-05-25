@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 /*
+* 课程表 https://leetcode.cn/problems/cheapest-flights-within-k-stops/
 * 解题思路：
 * 1.构建图：有向图，用vector<int>
 * 2.遍历图：
