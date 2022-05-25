@@ -37,6 +37,8 @@ using namespace std;
 *			3.边的数组：用一个类表示边。然后用数组，把所有的边对象存储起来。只有当我们需要确保某个操作复杂度严格为 【O(E)】 时，才会考虑使用。
 *		   提到三种存图方式的解法：https://leetcode.cn/problems/network-delay-time/solution/gong-shui-san-xie-yi-ti-wu-jie-wu-chong-oghpz/
 *	时间复杂度：https://blog.csdn.net/michealoven/article/details/114040136
+* 
+*	变种：Dijkstra也能应用于加权无向图：把无向图看作有向图构建即可。这也是因为Dijkstra能处理有环图。
 */
 class Solution {
 public:
@@ -72,8 +74,8 @@ public:
 	//}
 
 	int networkDelayTime(vector<vector<int>>& times, int n, int k) {
-		//也相当于预分配空间了吧？
-		//vector<vector<int>> graph(n + 1, vector<pair<int, int>>(n + 1));
+		//效果不等于reserve预分配空间了。reserve的话，在emplace_back，capacity不会增加。
+		//vector<vector<pair<int, int>>> graph(n + 1, vector<pair<int, int>>(n + 1));
 		//n + 1是为了编码方便。因为节点不是从0开始编号，而是1。
 		vector<vector<pair<int, int>>> graph(n + 1);
 		//预分配空间，避免扩容
@@ -82,6 +84,7 @@ public:
 		}
 		for (int i = 0; i < times.size(); i++) {
 			graph[times[i][0]].emplace_back(times[i][1], times[i][2]);
+			cout << graph[times[i][0]].capacity() << endl;
 		}
 		//最大肯定不会超过10001
 		vector<int> dict(n + 1, 10001);
@@ -91,7 +94,7 @@ public:
 		q.emplace(0, k);
 		int ans = 0;
 		while (!q.empty()) {
-			//是top()，没有front()
+			//是top()，没有front().queue是front()。
 			pair<int, int> p = q.top();
 			//pair的first、second是字段，不是方法
 			int time = p.first;

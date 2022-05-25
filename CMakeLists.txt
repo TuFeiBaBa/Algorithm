@@ -63,4 +63,6 @@ add_executable(cracking-the-safe "leetcode/graph/cracking-the-safe.cpp")
 add_executable(couples-holding-hands "leetcode/graph/couples-holding-hands.cpp")
 
 add_executable(is-graph-bipartite "leetcode/graph/is-graph-bipartite.cpp")
+
+add_executable(cheapest-flights-within-k-stops "leetcode/graph/cheapest-flights-within-k-stops.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
