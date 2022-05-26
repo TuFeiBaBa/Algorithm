@@ -22,7 +22,8 @@ using namespace std;
 *		4.还有一个小问题：如何快速确定x在哪里。
 *
 * 广度优先搜索：https://leetcode.cn/problems/couples-holding-hands/solution/qing-lu-qian-shou-by-leetcode-solution-bvzr/
-* 核心思路：将不匹配的row[i]、row[i + 1]，视为无向图上的连通的两个节点。然后用BFS遍历图。（可能是多个连通图组成的图，所以要遍历每个可能的起点，进行BFS）
+* 核心思路：将不匹配的row[i]、row[i + 1]，视为无向图上的连通的两个节点，构建图。然后用BFS遍历图。
+*	（可能是多个连通图组成的图，所以要遍历每个可能的起点，进行BFS）
 */
 class UnionFind {
 private:
