@@ -13,7 +13,7 @@ using namespace std;
  *  2.动态方程是 dp[x][y] = max(dp[x][y],dp[nx][ny] + 1)
  * 3.每个点，能往另一个点走的前提是
  *	1.matrix[x][y] <= matrix[nx][ny]
- * 
+ *
  * 时间复杂度计算：https://leetcode-cn.com/problems/longest-increasing-path-in-a-matrix/solution/ju-zhen-zhong-de-zui-chang-di-zeng-lu-jing-by-le-2/
  */
 class Solution {
@@ -51,6 +51,10 @@ class Solution {
 	//	}
 
 public:
+	/**
+	* 拓扑排序+dist数组+松弛，可以用在DAG上面获取最短/最长路径，但是这里由于节点之间的边长都是1。
+	* 所以只需要deep来记录路径BFS的层数（即边的数）
+	*/
 	int longestIncreasingPath(vector<vector<int>>& matrix) {
 		//vector<vector<int>> in(matrix.size(), vector<int>(matrix[0].size()));
 		vector<vector<int>> out(matrix.size(), vector<int>(matrix[0].size()));
