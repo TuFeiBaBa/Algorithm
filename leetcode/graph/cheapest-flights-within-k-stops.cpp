@@ -74,9 +74,14 @@ using namespace std;
 
 /**
 *  K 站中转内最便宜的航班 https://leetcode.cn/problems/cheapest-flights-within-k-stops/
-* 
+*
 *  Bellman-Ford算法：本质上就是动态规划。
-*		算法应用场景：https://blog.csdn.net/qq_40597059/article/details/88027140
+*		步骤：
+*			1.初始化：除了dict[src]初始化为0。其余初始化为max。这是为了限定只以src作为出发点。
+*			2.两层或三层遍历：第一层代表的是第几步。二三层主要目的是为了遍历所有的边。
+*			3.dict[limit][y] = min(dict[limit][y], dict[limit - 1][i] + d) ：从第limit - 1步，推断第limit步走到y的结果
+*
+*  算法应用场景：https://blog.csdn.net/qq_40597059/article/details/88027140
 *			1.求解经过不超过k条边的最短路
 *			2.求解经过恰好k条边的最短路（可重复经过）
 *		（上述场景，Bellman-Ford 队列优化版本应该都不适用吧？优化版本在本题，也不适用。）
