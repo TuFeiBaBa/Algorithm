@@ -69,4 +69,6 @@ add_executable(cheapest-flights-within-k-stops "leetcode/graph/cheapest-flights-
 add_executable(all-paths-from-source-to-target "leetcode/graph/all-paths-from-source-to-target.cpp")
 
 add_executable(find-eventual-safe-states "leetcode/graph/find-eventual-safe-states.cpp")
+
+add_executable(sum-of-distances-in-tree "leetcode/graph/sum-of-distances-in-tree.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
