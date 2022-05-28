@@ -50,6 +50,8 @@ private:
 			if (e == old) continue;
 			dfs2(graph, n, e);
 		}
+		//回溯
+		//但写法有问题：应该考虑把前面的旧值缓存起来，减少计算
 		dp[n] = dp[n] - (dp[old] + sz[old]);
 		sz[n] = sz[n] - sz[old];
 		dp[old] = dp[old] + (dp[n] + sz[n]);
@@ -68,10 +70,11 @@ public:
 
 		dfs(graph, 0);
 		ans[0] = dp[0];
+		//这里写得不好，统一整合到dfs2里更合适
+		//参考：https://leetcode.cn/problems/sum-of-distances-in-tree/solution/shu-zhong-ju-chi-zhi-he-by-leetcode-solution/
 		for (int e : graph[0]) {
 			dfs2(graph, 0, e);
 		}
-
 		return ans;
 	}
 };
