@@ -55,8 +55,11 @@ public:
 			q.pop();
 			if (mark == full) return d;
 			for (int j : graph[i]) {
+				//这里应该是二进制操作..记得加括号..
 				//int markJ = mark + (1 << j);
 				int markJ = mark | (1 << j);
+				//在这里return，应该更好，即使是n为1的情况，进不来，但是后面return 0，也能覆盖
+				//if (markJ == full) return d + 1;
 				if (!seen[j][markJ]) {
 					seen[j][markJ] = true;
 					q.emplace(j, markJ, d + 1);
