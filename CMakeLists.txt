@@ -71,4 +71,6 @@ add_executable(all-paths-from-source-to-target "leetcode/graph/all-paths-from-so
 add_executable(find-eventual-safe-states "leetcode/graph/find-eventual-safe-states.cpp")
 
 add_executable(sum-of-distances-in-tree "leetcode/graph/sum-of-distances-in-tree.cpp")
+
+add_executable(shortest-path-visiting-all-nodes "leetcode/graph/shortest-path-visiting-all-nodes.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
