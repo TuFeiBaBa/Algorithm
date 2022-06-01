@@ -76,6 +76,9 @@ using namespace std;
 //	}
 //};
 
+/*
+* Floyd算法：https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm
+*/
 class Solution {
 public:
 	int shortestPathLength(vector<vector<int>>& graph) {
@@ -86,7 +89,7 @@ public:
 				d[i][j] = 1;
 			}
 		}
-		// 使用 floyd 算法预处理出所有点对之间的最短路径长度
+		//使用 floyd 算法预处理出所有点对之间的最短路径长度
 		for (int k = 0; k < n; ++k) {
 			for (int i = 0; i < n; ++i) {
 				for (int j = 0; j < n; ++j) {
