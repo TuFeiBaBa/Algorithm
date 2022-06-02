@@ -99,11 +99,12 @@ public:
 		}
 
 		vector<vector<int>> f(n, vector<int>(1 << n, INT_MAX / 2));
+		for (int i = 0; i < n; i++) f[i][1 << i] = 0;
 		for (int mask = 1; mask < (1 << n); ++mask) {
 			//如果 mask 只包含一个 1，即 mask 是 2 的幂
 			if ((mask & (mask - 1)) == 0) {
 				//C++ __builtin_系列函数:https://blog.csdn.net/yandaoqiusheng/article/details/102920785
-				int u = __builtin_ctz(mask);
+				//int u = __builtin_ctz(mask);
 				//由于可以将任意点作为起点出发，可以将这些起点的最短距离（步长）设置为 0
 				//也可以在遍历mask之前，通过下列代码进行初始化
 				//for (int i = 0; i < n; i++) f[i][1 << i] = 0;
@@ -111,7 +112,7 @@ public:
 				//在这里初始化，不会导致问题？
 				//不会。在整个动态规划过程中，假设u-v是一条边。v的序号大于u。f[u][mask]中的mask是不会使用到v的。
 				//f[v][mask]才会使用到u。换个角度想想，u-v是无向的。计算出f[v][mask]就是计算u-v的最短路径。
-				f[u][mask] = 0;
+				//f[u][mask] = 0;
 			}
 			else {
 				for (int u = 0; u < n; ++u) {

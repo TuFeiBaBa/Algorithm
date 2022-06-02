@@ -73,4 +73,6 @@ add_executable(find-eventual-safe-states "leetcode/graph/find-eventual-safe-stat
 add_executable(sum-of-distances-in-tree "leetcode/graph/sum-of-distances-in-tree.cpp")
 
 add_executable(shortest-path-visiting-all-nodes "leetcode/graph/shortest-path-visiting-all-nodes.cpp")
+
+add_executable(possible-bipartition "leetcode/graph/possible-bipartition.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
