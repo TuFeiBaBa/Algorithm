@@ -77,4 +77,6 @@ add_executable(shortest-path-visiting-all-nodes "leetcode/graph/shortest-path-vi
 add_executable(possible-bipartition "leetcode/graph/possible-bipartition.cpp")
 
 add_executable(cat-and-mouse "leetcode/graph/cat-and-mouse.cpp")
+
+add_executable(most-stones-removed-with-same-row-or-column "leetcode/graph/most-stones-removed-with-same-row-or-column.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
