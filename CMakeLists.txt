@@ -81,4 +81,6 @@ add_executable(cat-and-mouse "leetcode/graph/cat-and-mouse.cpp")
 add_executable(most-stones-removed-with-same-row-or-column "leetcode/graph/most-stones-removed-with-same-row-or-column.cpp")
 
 add_executable(regions-cut-by-slashes "leetcode/graph/regions-cut-by-slashes.cpp")
+
+add_executable(satisfiability-of-equality-equations "leetcode/graph/satisfiability-of-equality-equations.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
