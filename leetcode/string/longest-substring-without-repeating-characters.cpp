@@ -19,6 +19,7 @@ using namespace std;
 */
 //默认初始化为0
 static int nums[26];
+int nums1[26];
 class Solution {
 	//默认初始化为随机数
 	int num[26];
@@ -50,6 +51,7 @@ public:
 		int record4[26] = { 1,2 };
 		int r[26];
 		nums[0] = 2;
+		nums1[0] = 2;
 		//不进行类外初始化，则编译就会报错
 		nums2[0] = 2;
 		//不进行类外初始化，则编译就会报错
