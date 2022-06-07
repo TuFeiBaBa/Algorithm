@@ -87,4 +87,6 @@ add_executable(satisfiability-of-equality-equations "leetcode/graph/satisfiabili
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
 add_executable(loud-and-rich "leetcode/graph/loud-and-rich.cpp")
+
+add_executable(find-the-town-judge "leetcode/graph/find-the-town-judge.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
