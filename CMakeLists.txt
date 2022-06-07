@@ -88,6 +88,8 @@ add_executable(loud-and-rich "leetcode/graph/loud-and-rich.cpp")
 
 add_executable(find-the-town-judge "leetcode/graph/find-the-town-judge.cpp")
 
+add_executable(flower-planting-with-no-adjacent "leetcode/graph/flower-planting-with-no-adjacent.cpp")
+
 
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
