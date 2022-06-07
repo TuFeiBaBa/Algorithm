@@ -84,9 +84,13 @@ add_executable(regions-cut-by-slashes "leetcode/graph/regions-cut-by-slashes.cpp
 
 add_executable(satisfiability-of-equality-equations "leetcode/graph/satisfiability-of-equality-equations.cpp")
 
-add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
-
 add_executable(loud-and-rich "leetcode/graph/loud-and-rich.cpp")
 
 add_executable(find-the-town-judge "leetcode/graph/find-the-town-judge.cpp")
+
+
+
+add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
+
+add_executable(longest-palindromic-substring "leetcode/string/longest-palindromic-substring.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
