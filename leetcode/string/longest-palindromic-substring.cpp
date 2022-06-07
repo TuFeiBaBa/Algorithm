@@ -40,8 +40,8 @@ using namespace std;
 *
 * 注意事项：
 *   1.回文有两种：①以某个字符为中心，②以某两个相等的字符(或者说以空字符)为中心
-*   2.这里求的是最长回文子串，不是求长度。不过可以在推导过程中，不断判断是否是最长的回文，
-*     不断更新最长回文的start_pos和end_pos。最后再求长度。
+*   2.这里求的是最长回文子串，不是求长度。不过不应该在推导过程中不停切割字符串。
+*	  可以在推导过程中，不断判断是否是最长的回文，不断更新最长回文的start_pos和end_pos。最后再进行切割。
 *
 * 最优解是Manacher算法：https://leetcode.cn/problems/longest-palindromic-substring/solution/zui-chang-hui-wen-zi-chuan-by-leetcode-solution/
 */
