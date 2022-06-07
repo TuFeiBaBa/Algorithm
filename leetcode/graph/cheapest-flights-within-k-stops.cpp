@@ -52,10 +52,10 @@ using namespace std;
 //		q.emplace(0, k, src);
 //		while (!q.empty()) {
 //			tuple<int,int,int> t = q.top();
-//			q.pop();
 //			int price = get<0>(t);
 //			int cnt = get<1>(t);
 //			int city = get<2>(t);
+//			q.pop();
 //			//city是"确定顶点"，所以已经找到了最短路径。
 //			if (city == dst) {
 //				return city;
