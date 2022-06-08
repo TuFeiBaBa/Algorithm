@@ -8,9 +8,9 @@ using namespace std;
 * Z 字形变换:https://leetcode.cn/problems/zigzag-conversion/
 *
 * 思路：在正常遍历字符串的过程中，按Z字形保存字符在对应的row * col 矩阵中。由于cache[row][col]不是都可能保存有字符，
-*		存在明显的空间浪费。所以可以采用邻接表的形式(OS：其实也不会算需要多少row)。
+*		存在明显的空间浪费。所以可以采用邻接表的形式(OS：下面代码选择邻接表，部分原因也是也不会算需要多少每行最多需要col)。
 *
-* 需要多少row，以及最优解：直接构造，都可参考：https://leetcode.cn/problems/zigzag-conversion/solution/z-zi-xing-bian-huan-by-leetcode-solution-4n3u/
+* 需要多少col，以及最优解：直接构造，都可参考：https://leetcode.cn/problems/zigzag-conversion/solution/z-zi-xing-bian-huan-by-leetcode-solution-4n3u/
 */
 class Solution {
 public:
