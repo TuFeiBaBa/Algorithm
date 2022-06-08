@@ -95,4 +95,6 @@ add_executable(flower-planting-with-no-adjacent "leetcode/graph/flower-planting-
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
 add_executable(longest-palindromic-substring "leetcode/string/longest-palindromic-substring.cpp")
+
+add_executable(zigzag-conversion "leetcode/string/zigzag-conversion.cpp")
 # TODO: 如有需要，请添加测试并安装目标。

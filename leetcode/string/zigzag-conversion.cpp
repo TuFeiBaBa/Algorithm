@@ -1,0 +1,53 @@
+#include <string>
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+/*
+* Z 字形变换:https://leetcode.cn/problems/zigzag-conversion/
+*
+* 思路：在正常遍历字符串的过程中，按Z字形保存字符在对应的row * col 矩阵中。由于cache[row][col]不是都可能保存有字符，
+*		存在明显的空间浪费。所以可以采用邻接表的形式(OS：其实也不会算需要多少row)。
+*
+* 需要多少row，以及最优解：直接构造，都可参考：https://leetcode.cn/problems/zigzag-conversion/solution/z-zi-xing-bian-huan-by-leetcode-solution-4n3u/
+*/
+class Solution {
+public:
+	string convert(string s, int numRows) {
+		if (numRows == 1) return s;
+		int k = s.size();
+		vector<vector<char>> cache(numRows);
+		int row = 0;
+		int i = 0;
+		while (i < s.size()) {
+			while (row < numRows && i < s.size()) {
+				cache[row].push_back(s[i]);
+				row++;
+				i++;
+			}
+			row -= 2;
+			while (row > 0 && i < s.size()) {
+				cache[row].push_back(s[i]);
+				row--;
+				i++;
+			}
+		}
+		string ans;
+		for (int m = 0; m < cache.size(); m++) {
+			for (int n = 0; n < cache[m].size(); n++) {
+				//append不行
+				//ans.append(to_string(cache[m][n]));
+				//push_back和+=均可
+				//ans.push_back(cache[m][n]);
+				ans += cache[m][n];
+			}
+		}
+		return ans;
+	}
+};
+int main() {
+	Solution su;
+	string ans = su.convert("PAYPALISHIRING", 3);
+	cout << ans << endl;
+}
