@@ -99,4 +99,6 @@ add_executable(longest-substring-without-repeating-characters "leetcode/string/l
 add_executable(longest-palindromic-substring "leetcode/string/longest-palindromic-substring.cpp")
 
 add_executable(zigzag-conversion "leetcode/string/zigzag-conversion.cpp")
+
+add_executable(string-to-integer-atoi "leetcode/string/string-to-integer-atoi.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
