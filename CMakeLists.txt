@@ -90,6 +90,8 @@ add_executable(find-the-town-judge "leetcode/graph/find-the-town-judge.cpp")
 
 add_executable(flower-planting-with-no-adjacent "leetcode/graph/flower-planting-with-no-adjacent.cpp")
 
+add_executable(shortest-path-with-alternating-colors "leetcode/graph/shortest-path-with-alternating-colors.cpp")
+
 
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
