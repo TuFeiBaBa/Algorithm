@@ -92,6 +92,7 @@ add_executable(flower-planting-with-no-adjacent "leetcode/graph/flower-planting-
 
 add_executable(shortest-path-with-alternating-colors "leetcode/graph/shortest-path-with-alternating-colors.cpp")
 
+add_executable(number-of-operations-to-make-network-connected "leetcode/graph/number-of-operations-to-make-network-connected.cpp")
 
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
