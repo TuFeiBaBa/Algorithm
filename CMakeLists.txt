@@ -104,4 +104,6 @@ add_executable(zigzag-conversion "leetcode/string/zigzag-conversion.cpp")
 add_executable(string-to-integer-atoi "leetcode/string/string-to-integer-atoi.cpp")
 
 add_executable(integer-to-roman "leetcode/string/integer-to-roman.cpp")
+
+add_executable(roman-to-integer "leetcode/string/roman-to-integer.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
