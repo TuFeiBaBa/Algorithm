@@ -1,4 +1,5 @@
 ﻿#include <string>
+#include <unordered_map>
 
 using namespace std;
 /*
@@ -23,19 +24,41 @@ using namespace std;
 *	XL = L - X
 *	XC = C - X
 *	CD = D - C
-*	CM = M - 100
+*	CM = M - C
 */
 class Solution {
 public:
 	int romanToInt(string s) {
-		int ans = 0;
-		int i = 0;
+		unordered_map<char, int> values = {
+			{'I', 1},
+			{'V', 5},
+			{'X', 10},
+			{'L', 50},
+			{'C', 100},
+			{'D', 500},
+			{'M', 1000},
+		};
+		unordered_map<char, char> pair = {
+			{'V','I'},
+			{'X','I'},
+			{'L','X'},
+			{'C','X'},
+			{'D','C'},
+			{'M','C'},
+		};
+		int ans = values[s[0]];
 		//MCMXCIV 1994
 		//CMXCIX  999
 		//LLL	  30
-		while (i < s.size()) {
-			
+		for (int i = 1; i < s.size(); i++) {
+			if (pair.find(s[i]) != pair.end() && pair[s[i]] == s[i - 1]) {
+				ans += values[s[i]] - 2 * values[pair[s[i]]];
+			}
+			else {
+				ans += values[s[i]];
+			}
 		}
+		return ans;
 	}
 };
 

@@ -110,4 +110,6 @@ add_executable(integer-to-roman "leetcode/string/integer-to-roman.cpp")
 add_executable(roman-to-integer "leetcode/string/roman-to-integer.cpp")
 
 add_executable(longest-common-prefix "leetcode/string/longest-common-prefix.cpp")
+
+add_executable(letter-combinations-of-a-phone-number "leetcode/string/letter-combinations-of-a-phone-number.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
