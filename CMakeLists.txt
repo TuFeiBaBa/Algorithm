@@ -94,6 +94,8 @@ add_executable(shortest-path-with-alternating-colors "leetcode/graph/shortest-pa
 
 add_executable(number-of-operations-to-make-network-connected "leetcode/graph/number-of-operations-to-make-network-connected.cpp")
 
+add_executable(find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance "leetcode/graph/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.cpp")
+
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
