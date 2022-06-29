@@ -44,6 +44,7 @@ class Solution {
 private:
 	string str;
 	vector<string> ans;
+	//前面增加两个空字符串，是为了编码方便
 	vector<string> table = { "","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz" };
 
 	void dfs(string& digits, int i) {
