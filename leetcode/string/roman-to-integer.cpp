@@ -4,6 +4,9 @@
 using namespace std;
 /*
 * 罗马数字转整数:https://leetcode.cn/problems/roman-to-integer/
+* 
+* 官解：https://leetcode.cn/problems/roman-to-integer/solution/luo-ma-shu-zi-zhuan-zheng-shu-by-leetcod-w55p/
+* 官解比下方解法更优一点。也不需要额外定义一个pair的哈希表。
 *
 * 字符          数值
 *	I             1
