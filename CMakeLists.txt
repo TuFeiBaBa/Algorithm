@@ -96,6 +96,9 @@ add_executable(number-of-operations-to-make-network-connected "leetcode/graph/nu
 
 add_executable(find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance "leetcode/graph/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance.cpp")
 
+add_executable(validate-binary-tree-nodes "leetcode/graph/validate-binary-tree-nodes.cpp")
+
+
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
