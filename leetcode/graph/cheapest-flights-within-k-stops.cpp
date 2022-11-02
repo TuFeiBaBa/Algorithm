@@ -42,6 +42,7 @@ using namespace std;
 //	
 //		for (int i = 0; i < flights.size(); i++) {
 //			//vector的emplace和emplace_back有啥区别？
+//			//emplace_back是在末尾插入，emplace是在指定的迭代器后面插入
 //			graph[flights[i][0]].emplace_back(flights[i][1], flights[i][2]);
 //		}
 //		bool conn = isConnect(graph, src, dst);

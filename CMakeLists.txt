@@ -102,6 +102,8 @@ add_executable(course-schedule-iv "leetcode/graph/course-schedule-iv.cpp")
 
 add_executable(reorder-routes-to-make-all-paths-lead-to-the-city-zero "leetcode/graph/reorder-routes-to-make-all-paths-lead-to-the-city-zero.cpp")
 
+add_executable(path-with-maximum-probability "leetcode/graph/path-with-maximum-probability.cpp")
+
 
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
