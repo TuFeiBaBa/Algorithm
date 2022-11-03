@@ -81,6 +81,8 @@ public:
 					//路径长度在这里意义不大，需要对Floyd算法做一点小小的变更
 					//graph[i][j] = min(graph[i][j], graph[i][k] + graph[k][j]);
 					if (graph[i][k] && graph[k][j]) graph[i][j] = 1;
+					//效果等同于下
+					//graph[i][j] = graph[i][j] | graph[i][k] & graph[k][j];
 				}
 			}
 		};
