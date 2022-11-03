@@ -106,6 +106,8 @@ add_executable(path-with-maximum-probability "leetcode/graph/path-with-maximum-p
 
 add_executable(minimum-number-of-vertices-to-reach-all-nodes "leetcode/graph/minimum-number-of-vertices-to-reach-all-nodes.cpp")
 
+add_executable(maximal-network-rank "leetcode/graph/maximal-network-rank.cpp")
+
 
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
