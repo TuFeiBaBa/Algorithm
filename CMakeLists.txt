@@ -104,7 +104,7 @@ add_executable(reorder-routes-to-make-all-paths-lead-to-the-city-zero "leetcode/
 
 add_executable(path-with-maximum-probability "leetcode/graph/path-with-maximum-probability.cpp")
 
-add_executable(minimum-number-of-vertices-to-reach-all-nodes/description "leetcode/graph/minimum-number-of-vertices-to-reach-all-nodes.cpp")
+add_executable(minimum-number-of-vertices-to-reach-all-nodes "leetcode/graph/minimum-number-of-vertices-to-reach-all-nodes.cpp")
 
 
 
