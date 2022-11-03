@@ -46,7 +46,7 @@ class Solution {
 public:
 	int minReorder(int n, vector<vector<int>>& connections) {
 		//用的是三维，不是二维
-		//感觉不用三维也可以，因为构建图用的是邻接矩阵，用vector<Edge>即可，Edge里包括顶点和方向即可。
+		//感觉不用三维也可以，因为构建图用的是邻接矩阵，用vector<vector<Edge>>即可，Edge里包括顶点和方向即可。
 		vector<vector<vector<int>>> graph(n);
 		for (int i = 0; i < connections.size(); i++) {
 			graph[connections[i][0]].emplace_back(vector<int>{ connections[i][1], 1 });
