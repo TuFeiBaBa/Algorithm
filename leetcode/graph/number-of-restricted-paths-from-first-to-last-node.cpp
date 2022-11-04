@@ -96,7 +96,7 @@ public:
 		//}
 		//return dp[1];
 
-		int mod = (int)(1e9 + 7);
+		int mod = 1e9 + 7;
 		vector<int> index(n), dp(n + 1,0);
 		iota(index.begin(), index.end(), 1);
 		sort(index.begin(), index.end(), [&](auto a, auto b) {
