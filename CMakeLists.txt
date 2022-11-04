@@ -2,6 +2,7 @@
 # 项目特定的逻辑。
 #
 cmake_minimum_required (VERSION 3.8)
+set(CMAKE_CXX_STANDARD 17)
 
 project ("Algorithm")
 
@@ -107,6 +108,8 @@ add_executable(path-with-maximum-probability "leetcode/graph/path-with-maximum-p
 add_executable(minimum-number-of-vertices-to-reach-all-nodes "leetcode/graph/minimum-number-of-vertices-to-reach-all-nodes.cpp")
 
 add_executable(maximal-network-rank "leetcode/graph/maximal-network-rank.cpp")
+
+add_executable(number-of-restricted-paths-from-first-to-last-node "leetcode/graph/number-of-restricted-paths-from-first-to-last-node.cpp")
 
 
 
