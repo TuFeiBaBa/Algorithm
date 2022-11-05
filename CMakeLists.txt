@@ -111,6 +111,8 @@ add_executable(maximal-network-rank "leetcode/graph/maximal-network-rank.cpp")
 
 add_executable(number-of-restricted-paths-from-first-to-last-node "leetcode/graph/number-of-restricted-paths-from-first-to-last-node.cpp")
 
+add_executable(number-of-ways-to-arrive-at-destination "leetcode/graph/number-of-ways-to-arrive-at-destination.cpp")
+
 
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
