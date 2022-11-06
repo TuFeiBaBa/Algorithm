@@ -17,8 +17,6 @@ add_executable(plates-between-candles "leetcode/plates-between-candles.cpp")
 
 add_executable(minimum-index-sum-of-two-lists "leetcode/minimum-index-sum-of-two-lists.cpp")
 
-add_executable(the-time-when-the-network-becomes-idle "leetcode/the-time-when-the-network-becomes-idle.cpp")
-
 add_executable(k-th-smallest-in-lexicographical-order "leetcode/k-th-smallest-in-lexicographical-order.cpp")
 
 add_executable(find-missing-observations "leetcode/find-missing-observations.cpp")
@@ -113,6 +111,7 @@ add_executable(number-of-restricted-paths-from-first-to-last-node "leetcode/grap
 
 add_executable(number-of-ways-to-arrive-at-destination "leetcode/graph/number-of-ways-to-arrive-at-destination.cpp")
 
+add_executable(the-time-when-the-network-becomes-idle "leetcode/graph/the-time-when-the-network-becomes-idle.cpp")
 
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
