@@ -17,9 +17,9 @@ public:
 		}
 		sort(in.begin(), in.end());
 		long long ans = 0;
-		//这里的i是long类型，防止in[i] * (i + 1)计算溢出
-		//而不是将in改为vector<long>类型：显然这样更浪费空间。
-		for (long i = 0; i < n; i++) {
+		//这里的i是long long类型，防止in[i] * (i + 1)计算溢出
+		//而不是将in改为vector<long long>类型：显然这样更浪费空间。
+		for (long long i = 0; i < n; i++) {
 			ans += in[i] * (i + 1);
 		}
 		return ans;
