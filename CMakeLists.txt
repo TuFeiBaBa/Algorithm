@@ -117,6 +117,8 @@ add_executable(detonate-the-maximum-bombs "leetcode/graph/detonate-the-maximum-b
 
 add_executable(find-all-possible-recipes-from-given-supplies "leetcode/graph/find-all-possible-recipes-from-given-supplies.cpp")
 
+add_executable(all-ancestors-of-a-node-in-a-directed-acyclic-graph "leetcode/graph/all-ancestors-of-a-node-in-a-directed-acyclic-graph.cpp")
+
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
