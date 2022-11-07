@@ -119,6 +119,8 @@ add_executable(find-all-possible-recipes-from-given-supplies "leetcode/graph/fin
 
 add_executable(all-ancestors-of-a-node-in-a-directed-acyclic-graph "leetcode/graph/all-ancestors-of-a-node-in-a-directed-acyclic-graph.cpp")
 
+add_executable(maximum-total-importance-of-roads "leetcode/graph/maximum-total-importance-of-roads.cpp")
+
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
