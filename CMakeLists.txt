@@ -113,6 +113,8 @@ add_executable(number-of-ways-to-arrive-at-destination "leetcode/graph/number-of
 
 add_executable(the-time-when-the-network-becomes-idle "leetcode/graph/the-time-when-the-network-becomes-idle.cpp")
 
+add_executable(detonate-the-maximum-bombs "leetcode/graph/detonate-the-maximum-bombs.cpp")
+
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
