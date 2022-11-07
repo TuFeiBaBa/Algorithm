@@ -115,6 +115,8 @@ add_executable(the-time-when-the-network-becomes-idle "leetcode/graph/the-time-w
 
 add_executable(detonate-the-maximum-bombs "leetcode/graph/detonate-the-maximum-bombs.cpp")
 
+add_executable(find-all-possible-recipes-from-given-supplies "leetcode/graph/find-all-possible-recipes-from-given-supplies.cpp")
+
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
