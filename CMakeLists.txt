@@ -129,6 +129,8 @@ add_executable(number-of-enclaves "leetcode/graph/number-of-enclaves.cpp")
 
 add_executable(find-closest-node-to-given-two-nodes "leetcode/graph/find-closest-node-to-given-two-nodes.cpp")
 
+add_executable(reachable-nodes-with-restrictions "leetcode/graph/reachable-nodes-with-restrictions.cpp")
+
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
