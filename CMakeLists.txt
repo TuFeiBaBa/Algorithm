@@ -125,6 +125,8 @@ add_executable(shortest-bridge "leetcode/graph/shortest-bridge.cpp")
 
 add_executable(count-unreachable-pairs-of-nodes-in-an-undirected-graph "leetcode/graph/count-unreachable-pairs-of-nodes-in-an-undirected-graph.cpp")
 
+add_executable(number-of-enclaves "leetcode/graph/number-of-enclaves.cpp")
+
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
