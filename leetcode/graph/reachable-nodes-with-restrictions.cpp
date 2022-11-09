@@ -10,7 +10,7 @@ class Solution {
 public:
 	int reachableNodes(int n, vector<vector<int>>& edges, vector<int>& restricted) {
 		vector<vector<int>> g(n);
-		//不需要额外的set，只要used[restricted{i]] = true即可。
+		//不需要额外的set，只要used[restricted[i]] = true即可。
 		unordered_set<int> restr;
 
 		for (int i = 0; i < edges.size(); i++) {
