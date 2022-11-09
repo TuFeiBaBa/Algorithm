@@ -131,6 +131,8 @@ add_executable(find-closest-node-to-given-two-nodes "leetcode/graph/find-closest
 
 add_executable(reachable-nodes-with-restrictions "leetcode/graph/reachable-nodes-with-restrictions.cpp")
 
+add_executable(node-with-highest-edge-score "leetcode/graph/node-with-highest-edge-score.cpp")
+
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
