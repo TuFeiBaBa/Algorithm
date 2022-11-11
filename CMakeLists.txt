@@ -133,6 +133,11 @@ add_executable(reachable-nodes-with-restrictions "leetcode/graph/reachable-nodes
 
 add_executable(node-with-highest-edge-score "leetcode/graph/node-with-highest-edge-score.cpp")
 
+add_executable(volunteer-deployment "leetcode/graph/volunteer-deployment.cpp")
+
+add_executable(delivery-of-tokens "leetcode/graph/delivery-of-tokens.cpp")
+
+
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
 
