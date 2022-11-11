@@ -139,6 +139,8 @@ add_executable(delivery-of-tokens "leetcode/graph/delivery-of-tokens.cpp")
 
 add_executable(transportation-junction "leetcode/graph/transportation-junction.cpp")
 
+add_executable(the-game-of-pinball "leetcode/graph/the-game-of-pinball.cpp")
+
 
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
