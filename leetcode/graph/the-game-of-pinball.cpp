@@ -53,6 +53,8 @@ using namespace std;
 * 问题点：
 * 1)dfs函数可改为遍历
 * 2)move定义改为{{0,1},{1,0},{0,-1},{-1,0}。那么当前方向为k时，逆时针就是 (k + 3) % 4，顺时针是(k + 1) % 4
+* 
+* 另一个思路是从'O'开始倒推，时间复杂度同样是O(mn)，但似乎很卡常数 https://leetcode.cn/problems/EXvqDp/solutions/1846181/by-tsreaper-46no/
 */
 class Solution {
 private:
