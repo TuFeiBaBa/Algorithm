@@ -143,6 +143,8 @@ add_executable(the-game-of-pinball "leetcode/graph/the-game-of-pinball.cpp")
 
 add_executable(palindrome-partitioning "leetcode/graph/palindrome-partitioning.cpp")
 
+add_executable(bipartite-graph "leetcode/graph/bipartite-graph.cpp")
+
 
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
