@@ -97,8 +97,13 @@ public:
 		//不应该加参数n，会创建一个有n个vector<string>空数组的vector<vector<string>>
 		//每次ans.push_back是在此基础上追加
 		//ans = vector<vector<string>>(n);
-		ans = vector<vector<string>>();
-		dp = vector<vector<bool>>(n, vector<bool>(n, true));
+		
+		// 多余的步骤
+		//ans = vector<vector<string>>();
+		
+		//性能较差的写法，应该是会调用右边对象的拷贝函数
+		//dp = vector<vector<bool>>(n, vector<bool>(n, true));
+		dp.assign(n, vector<bool>(n, true));
 
 		//非常精妙的初始化，如果要求是求方案数，也是可以的(https://leetcode.cn/problems/palindromic-substrings/description/)。
 		//int nums = n;
