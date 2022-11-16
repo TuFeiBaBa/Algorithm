@@ -145,6 +145,8 @@ add_executable(palindrome-partitioning "leetcode/graph/palindrome-partitioning.c
 
 add_executable(bipartite-graph "leetcode/graph/bipartite-graph.cpp")
 
+add_executable(sequence-reconstruction "leetcode/graph/sequence-reconstruction.cpp")
+
 
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
