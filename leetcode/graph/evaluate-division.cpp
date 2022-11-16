@@ -204,6 +204,5 @@ int main() {
 	vector<double> values{ 3.0, 4.0, 5.0, 6.0 };
 	vector<vector<string>> quueries{ {"x1","x5"} };
 	vector<double> res = su.calcEquation(equations, values, quueries);*/
-	if (-1) cout << "123" << endl;
 	for_each(res.begin(), res.end(), [](const double i) {cout << i << " "; });
 }
