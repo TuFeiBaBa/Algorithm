@@ -147,6 +147,8 @@ add_executable(bipartite-graph "leetcode/graph/bipartite-graph.cpp")
 
 add_executable(sequence-reconstruction "leetcode/graph/sequence-reconstruction.cpp")
 
+add_executable(find-the-index-of-the-first-occurrence-in-a-string "leetcode/graph/find-the-index-of-the-first-occurrence-in-a-string.cpp")
+
 
 
 add_executable(longest-substring-without-repeating-characters "leetcode/string/longest-substring-without-repeating-characters.cpp")
