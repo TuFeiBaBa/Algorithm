@@ -147,7 +147,6 @@ add_executable(bipartite-graph "leetcode/graph/bipartite-graph.cpp")
 
 add_executable(sequence-reconstruction "leetcode/graph/sequence-reconstruction.cpp")
 
-add_executable(find-the-index-of-the-first-occurrence-in-a-string "leetcode/graph/find-the-index-of-the-first-occurrence-in-a-string.cpp")
 
 
 
@@ -168,4 +167,6 @@ add_executable(longest-common-prefix "leetcode/string/longest-common-prefix.cpp"
 add_executable(letter-combinations-of-a-phone-number "leetcode/string/letter-combinations-of-a-phone-number.cpp")
 
 add_executable(valid-parentheses "leetcode/string/valid-parentheses.cpp")
+
+add_executable(find-the-index-of-the-first-occurrence-in-a-string "leetcode/string/find-the-index-of-the-first-occurrence-in-a-string.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
