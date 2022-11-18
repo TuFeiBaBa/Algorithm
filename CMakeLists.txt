@@ -171,4 +171,6 @@ add_executable(valid-parentheses "leetcode/string/valid-parentheses.cpp")
 add_executable(find-the-index-of-the-first-occurrence-in-a-string "leetcode/string/find-the-index-of-the-first-occurrence-in-a-string.cpp")
 
 add_executable(length-of-last-word "leetcode/string/length-of-last-word.cpp")
+
+add_executable(add-binary "leetcode/string/add-binary.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
