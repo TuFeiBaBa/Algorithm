@@ -175,4 +175,6 @@ add_executable(length-of-last-word "leetcode/string/length-of-last-word.cpp")
 add_executable(add-binary "leetcode/string/add-binary.cpp")
 
 add_executable(valid-palindrome "leetcode/string/valid-palindrome.cpp")
+
+add_executable(excel-sheet-column-title "leetcode/string/excel-sheet-column-title.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
