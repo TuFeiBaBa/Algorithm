@@ -183,4 +183,7 @@ add_executable(excel-sheet-column-number "leetcode/string/excel-sheet-column-num
 add_executable(isomorphic-strings "leetcode/string/isomorphic-strings.cpp")
 
 add_executable(valid-anagram "leetcode/string/valid-anagram.cpp")
+
+add_executable(binary-tree-paths "leetcode/string/binary-tree-paths.cpp")
+
 # TODO: 如有需要，请添加测试并安装目标。
