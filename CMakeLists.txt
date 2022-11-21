@@ -186,4 +186,6 @@ add_executable(valid-anagram "leetcode/string/valid-anagram.cpp")
 
 add_executable(binary-tree-paths "leetcode/string/binary-tree-paths.cpp")
 
+add_executable(reverse-string "leetcode/string/reverse-string.cpp")
+
 # TODO: 如有需要，请添加测试并安装目标。
