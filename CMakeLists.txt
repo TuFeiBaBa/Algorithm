@@ -191,4 +191,6 @@ add_executable(reverse-string "leetcode/string/reverse-string.cpp")
 add_executable(reverse-vowels-of-a-string "leetcode/string/reverse-vowels-of-a-string.cpp")
 
 add_executable(ransom-note "leetcode/string/ransom-note.cpp")
+
+add_executable(first-unique-character-in-a-string "leetcode/string/first-unique-character-in-a-string.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
