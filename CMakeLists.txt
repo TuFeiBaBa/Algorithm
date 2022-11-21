@@ -189,4 +189,6 @@ add_executable(binary-tree-paths "leetcode/string/binary-tree-paths.cpp")
 add_executable(reverse-string "leetcode/string/reverse-string.cpp")
 
 add_executable(reverse-vowels-of-a-string "leetcode/string/reverse-vowels-of-a-string.cpp")
+
+add_executable(ransom-note "leetcode/string/ransom-note.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
