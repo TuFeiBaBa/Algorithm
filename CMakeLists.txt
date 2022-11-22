@@ -201,4 +201,6 @@ add_executable(longest-palindrome "leetcode/string/longest-palindrome.cpp")
 add_executable(fizz-buzz "leetcode/string/fizz-buzz.cpp")
 
 add_executable(add-strings "leetcode/string/add-strings.cpp")
+
+add_executable(generate-parentheses "leetcode/string/generate-parentheses.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
