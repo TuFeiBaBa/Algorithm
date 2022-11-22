@@ -197,4 +197,6 @@ add_executable(first-unique-character-in-a-string "leetcode/string/first-unique-
 add_executable(is-subsequence "leetcode/string/is-subsequence.cpp")
 
 add_executable(longest-palindrome "leetcode/string/longest-palindrome.cpp")
+
+add_executable(fizz-buzz "leetcode/string/fizz-buzz.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
