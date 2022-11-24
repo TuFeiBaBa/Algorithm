@@ -205,4 +205,6 @@ add_executable(add-strings "leetcode/string/add-strings.cpp")
 add_executable(generate-parentheses "leetcode/string/generate-parentheses.cpp")
 
 add_executable(number-of-segments-in-a-string "leetcode/string/number-of-segments-in-a-string.cpp")
+
+add_executable(repeated-substring-pattern "leetcode/string/repeated-substring-pattern.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
