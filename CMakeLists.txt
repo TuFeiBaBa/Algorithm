@@ -215,4 +215,6 @@ add_executable(keyboard-row "leetcode/string/keyboard-row.cpp")
 add_executable(detect-capital "leetcode/string/detect-capital.cpp")
 
 add_executable(longest-uncommon-subsequence-i "leetcode/string/longest-uncommon-subsequence-i.cpp")
+
+add_executable(reverse-string-ii "leetcode/string/reverse-string-ii.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
