@@ -213,4 +213,6 @@ add_executable(license-key-formatting "leetcode/string/license-key-formatting.cp
 add_executable(keyboard-row "leetcode/string/keyboard-row.cpp")
 
 add_executable(detect-capital "leetcode/string/detect-capital.cpp")
+
+add_executable(longest-uncommon-subsequence-i "leetcode/string/longest-uncommon-subsequence-i.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
