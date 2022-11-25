@@ -211,4 +211,6 @@ add_executable(repeated-substring-pattern "leetcode/string/repeated-substring-pa
 add_executable(license-key-formatting "leetcode/string/license-key-formatting.cpp")
 
 add_executable(keyboard-row "leetcode/string/keyboard-row.cpp")
+
+add_executable(detect-capital "leetcode/string/detect-capital.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
