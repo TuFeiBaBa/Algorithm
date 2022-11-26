@@ -219,4 +219,6 @@ add_executable(longest-uncommon-subsequence-i "leetcode/string/longest-uncommon-
 add_executable(reverse-string-ii "leetcode/string/reverse-string-ii.cpp")
 
 add_executable(count-and-say "leetcode/string/count-and-say.cpp")
+
+add_executable(construct-string-from-binary-tree "leetcode/string/construct-string-from-binary-tree.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
