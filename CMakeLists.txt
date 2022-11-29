@@ -223,4 +223,6 @@ add_executable(count-and-say "leetcode/string/count-and-say.cpp")
 add_executable(construct-string-from-binary-tree "leetcode/string/construct-string-from-binary-tree.cpp")
 
 add_executable(multiply-strings "leetcode/string/multiply-strings.cpp")
+
+add_executable(most-common-word "leetcode/string/most-common-word.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
