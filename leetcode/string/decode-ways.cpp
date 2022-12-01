@@ -3,7 +3,7 @@
 
 using namespace std;
 /*
-* 解码方法 https://leetcode.cn/problems//description/
+* 解码方法 https://leetcode.cn/problems/decode-ways/description/
 * 
 * dfs递归：时间复杂度最坏情况下是2 * 2 * 2 *...* 2，高达2^100，行不通
 * 
