@@ -225,4 +225,6 @@ add_executable(construct-string-from-binary-tree "leetcode/string/construct-stri
 add_executable(multiply-strings "leetcode/string/multiply-strings.cpp")
 
 add_executable(most-common-word "leetcode/string/most-common-word.cpp")
+
+add_executable(simplify-path "leetcode/string/simplify-path.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
