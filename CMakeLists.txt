@@ -229,4 +229,6 @@ add_executable(most-common-word "leetcode/string/most-common-word.cpp")
 add_executable(simplify-path "leetcode/string/simplify-path.cpp")
 
 add_executable(decode-ways "leetcode/string/decode-ways.cpp")
+
+add_executable(number-of-days-between-two-dates "leetcode/string/number-of-days-between-two-dates.cpp")
 # TODO: 如有需要，请添加测试并安装目标。
